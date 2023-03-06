@@ -7,6 +7,8 @@ dataset = rasterio.open("C:/Temp/crop_rapideye.tif")
 
 dataset_array = dataset.read(1) # Lendo valores binários da matriz
 
+show(dataset_array)
+
 # Calculando média
 media = dataset_array.mean()
 print("Média = ", media)
